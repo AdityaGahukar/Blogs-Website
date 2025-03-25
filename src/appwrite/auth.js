@@ -46,6 +46,8 @@ export class AuthService {
     }
 
     // if the user directly goes to a particular page, check if the user if logged in or not
+    // used to check if a user is currently logged in when they access a page directly (e.g., via a bookmark or refreshing the page)
+    // If an error occurs (e.g., the session is expired or the user is not logged in), it logs the error and returns null
     async getCurrentUser(){
         try{
             return await this.account.get();
