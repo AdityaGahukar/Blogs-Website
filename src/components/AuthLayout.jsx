@@ -17,9 +17,9 @@ export default function Protected({children, authentication = true}){
         // }
 
         if(authentication && authStatus !== authentication){
-            navigate("/login");
+            navigate("/login");  // Redirect if authentication is required but user is NOT authenticated
         } else if(!authentication && authStatus === authentication){
-            navigate("/");
+            navigate("/");  // Redirect if authentication is NOT required but user IS authenticated
         }
         setLoader(false);
     }, [authStatus, authentication, navigate])
