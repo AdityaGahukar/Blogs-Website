@@ -26,21 +26,17 @@ function App() {
   }, [dispatch]);
 
   // conditional rendering
-  if (loading) {
-    return null;
-  }
-
-  return (
-    <div className="min-h-screen flex flex-wrap bg-gray-400 content-between">
+  return !loading ? (
+    <div className="min-h-screen flex flex-wrap content-between bg-gray-400">
       <div className="w-full block">
         <Header />
         <main>
-          {/* <Outlet /> */}
+          <Outlet />
         </main>
         <Footer />
       </div>
     </div>
-  );
+  ) : null;
 }
 
 export default App;

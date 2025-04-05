@@ -22,6 +22,7 @@ export default function RTE({ name, control, label, defaultValue = "" }) {
         control={control} // RHF takes control of the component (parent component passes control prop)
         render={({ field: { onChange } }) => (
           <Editor
+            apiKey="hnfk7nda9i5q78tlf954piwzy2nkji9hubvv0dcqr8317vus"
             initialValue={defaultValue}
             init={{
               initialValue: defaultValue,
