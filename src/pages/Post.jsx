@@ -23,7 +23,7 @@ export default function Post() {
           navigate("/");
         }
       });
-    }
+    } else navigate("/");
   }, [slug, navigate]);
 
   const deletePost = () => {
