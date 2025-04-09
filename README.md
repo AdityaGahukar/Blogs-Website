@@ -6,6 +6,8 @@ A full-stack blog platform where users can sign up, log in, create, view, and ma
 
 👉 [https://blogs-website-gules.vercel.app](https://blogs-website-gules.vercel.app)
 
+👉 [https://blogs-website-aditya-gahukar.vercel.app](https://blogs-website-aditya-gahukar.vercel.app)
+
 ---
 
 ## 📦 Tech Stack
