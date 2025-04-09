@@ -13,6 +13,9 @@ A full-stack blog platform where users can sign up, log in, create, view, and ma
 ## 📦 Tech Stack
 
 - **Frontend**: React, Tailwind CSS
+- **State Management**: Redux Toolkit
+- **Form Handling**: React Hook Form
+- **Text Parsing**: html-react-parser
 - **Backend Services**: Appwrite (Auth, Database, Storage)
 - **Rich Text Editor**: TinyMCE
 - **Deployment**: Vercel
@@ -33,14 +36,20 @@ A full-stack blog platform where users can sign up, log in, create, view, and ma
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/blog-website.git
-cd blog-website
+git clone https://github.com/AdityaGahukar/Blogs-Website.git
+cd Blogs-Website
 ```
 
 ### 2. Install dependencies
+
 ```bash
 npm install
 ```
+- react-hook-form for form handling
+- html-react-parser for parsing HTML content
+- @reduxjs/toolkit for state management
+- tinymce for rich text editing
+- appwrite for backend services
 
 ### 3. Set up environment variables
 
@@ -52,10 +61,9 @@ VITE_APPWRITE_PROJECT_ID=your_project_id
 VITE_APPWRITE_DATABASE_ID=your_database_id
 VITE_APPWRITE_COLLECTION_ID=your_collection_id
 VITE_APPWRITE_BUCKET_ID=your_bucket_id
-VITE_TINYMCE_API_KEY=your_tinymce_api_key
 ```
 
-> ⚠️ Make sure to add your domain (`*.vercel.app` or your custom domain) in Appwrite's **CORS settings**.
+> ⚠️ Make sure to add your domain (`localhost`, `*.vercel.app` or your custom domain) in Appwrite's **CORS settings**.
 
 ### 4. Start the development server
 ```bash
